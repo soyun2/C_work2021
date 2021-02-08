@@ -18,7 +18,7 @@ void main()
     change(arr);
 }
 
-int change(int arr)
+int change(int *arr)
 {
     int i, j;
     int brr[4][4]={0,};
