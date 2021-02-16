@@ -4,7 +4,7 @@
 
 int main(void)
 {
-    char result[50] = {"가위", "바위", "보"};
+    char *result[50] = {"가위", "바위", "보"};
     int w=0, s=0;
     int num;
     int com;
@@ -17,7 +17,7 @@ int main(void)
 
         if(num==com)
         {
-            printf("당신은 %s 선택, 컴퓨터는 %s 선택, 비겼습니다!", result[num-1], result[com-1]);
+            printf("당신은 %s 선택, 컴퓨터는 %s 선택, 비겼습니다!", *result[num-1], *result[com-1]);
             s++;
         }
         else if(num-com==-1 || num-com==2)
